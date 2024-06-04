@@ -4,9 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test</title>
+    <style> 
+        a {color:blue !important;} /* !important는 강제 우선적용의 의미 이다.*/
+   
+    </style>
+    <!-- 디자인만 가져갈꺼면 링크 --> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- 이벤트까지 가져갈꺼면 script를 쓰면된다. -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-    <a href="page1.html">Page1</a>
+    <a href="page1.html" style="color: greenyellow;">Page1</a> 
+    <!--위의 style태그와 코드에 직접 적용된 스타일 태그중 우선순위는 코드에 직접 적용된 태그가 높다.-->
     <a href="temp/page2.html">Page2</a>
+    <div class="container text-center">
+    <h1>My First Bootstrap Page</h1>
+    <p>This part is inside a .container class.</p>
+    <p>The .container class provides a responsive fixed width container.</p>
+    <p>Resize the browser window to see that the container width will change at different breakpoints.</p>
+</div>
 </body>
 </html>
